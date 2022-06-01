@@ -1,48 +1,42 @@
 <meta charset="UTF-8">
 
-
-<h1>Digite o produto</h1>
-<input/>
-
-<button>Adicionar a lista</button>
-<br>
-<br>
-<h1>Digite o valor</h1>
-<br>
-<input type="number">
-
-
+<h1>Lista de compras</h1>
 
 <script>
+    var produtos = [];
+    var precos = [];
+    var soma = 0;
+ 
+    var quantidade = parseInt(prompt("Quantos produtos você vai adicionar?"));
 
-var input = document.querySelector("input");
+    var contador = 1;
+
+    while( contador <= quantidade) {
+
+        var produto = prompt("Informe o produto " + contador);
+        var preco = prompt("informe o preço do " + produto);
+
+        produtos.push(produto);
+        precos.push(preco);
+
+        contador++;
+    }
+
+for(var i = 0; i < precos.length; i++){
+	soma += precos[i];
+
+}
 
 
-	function armazena() {
-				
-		document.write("O " + input.value + " custa " + valor1);
-		console.log(input.value);
-		//return input;
+ console.log(soma);
+ 
 
-
-	}
-
-
-var produto1;
-var produto2;
-var produto3;
-var produto4;
-var produto5;
-
-valor1 = prompt("Dgite o valor do ultimo produto adicionado");
-var valor2;
-var valor3;
-var valor4;
-var valor5;
-
-var button = document.querySelector("button");
-button.onclick = armazena;
-
-	
+    console.log(produto);
+     console.log(precos);
+   document.write(produtos);
+    document.write("<br>");
+   document.write(precos);
+   document.write("<br>");
+    document.write(preco);
 </script>
 
