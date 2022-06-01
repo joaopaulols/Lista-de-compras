@@ -14,10 +14,11 @@
     while( contador <= quantidade) {
 
         var produto = prompt("Informe o produto " + contador);
-        var preco = prompt("informe o preço do " + produto);
+        var preco = parseFloat(prompt("informe o preço do " + produto));
 
         produtos.push(produto);
         precos.push(preco);
+        console.log(preco);
 
         contador++;
     }
@@ -29,14 +30,13 @@ for(var i = 0; i < precos.length; i++){
 
 
  console.log(soma);
+ console.log(precos);
  
 
-    console.log(produto);
-     console.log(precos);
    document.write(produtos);
     document.write("<br>");
    document.write(precos);
    document.write("<br>");
-    document.write(preco);
+    document.write(soma);
 </script>
 
