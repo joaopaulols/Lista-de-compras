@@ -9,10 +9,40 @@
 <br>
 <h1>Digite o valor</h1>
 <br>
-<input/>
-<button>Adicionar a lista</button>
+<input type="number">
+
+
 
 <script>
+
+var input = document.querySelector("input");
+
+
+	function armazena() {
+				
+		document.write("O " + input.value + " custa " + valor1);
+		console.log(input.value);
+		//return input;
+
+
+	}
+
+
+var produto1;
+var produto2;
+var produto3;
+var produto4;
+var produto5;
+
+valor1 = prompt("Dgite o valor do ultimo produto adicionado");
+var valor2;
+var valor3;
+var valor4;
+var valor5;
+
+var button = document.querySelector("button");
+button.onclick = armazena;
+
 	
- var input = document.querySelector("input");
+</script>
 
